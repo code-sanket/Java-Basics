@@ -31,6 +31,9 @@ public class Threads {
     Now if you simply create a runnable interface and give impl using lambda and then try to run
     that particular runnable impl using run  method it will run sequentially and call the run method of
     current thread.
+
+    Also if you want to sleep a thread then you should call thread.sleep() inside the run method of
+    that particular thread sleep method works on the current thread not on the which it is called.
      */
 
     public static void main(String[] args) {
