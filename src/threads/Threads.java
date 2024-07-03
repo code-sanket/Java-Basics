@@ -46,6 +46,11 @@ public class Threads {
 
 
         Thread testingThread = new Thread(t3);
+        Thread testingThreadWithLambda = new Thread(()->{
+            System.out.println("I am thread with lambda experission for providing the implementation of runnable interface");
+        });
+        testingThreadWithLambda.setPriority(10);
+        testingThreadWithLambda.start();
         testingThread.setName("My Thread");
         testingThread.setPriority(6);
         testingThread.start();
