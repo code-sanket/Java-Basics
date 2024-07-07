@@ -19,7 +19,7 @@ public class FinalKeyword {
     }
 
     /*
-    Overloaded Final Method can be overriden in sub-class
+    Overloaded Final Method can be overriden in subclass
      */
     static class B extends A{
         @Override
